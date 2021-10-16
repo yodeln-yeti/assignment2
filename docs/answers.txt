@@ -1,0 +1,65 @@
+DATE GIT LAB TUTORIALS: 10/15/21
+DATE GITHUB ACCOUNT: 10/15/21
+3.5.1
+    Jonathans-MBP:docs jonathanrose$ git commit -m="Created docs folder and status.txt"
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+    	../.idea/
+    	./
+
+    nothing added to commit but untracked files present (use "git add" to track)
+    Jonathans-MBP:docs jonathanrose$ git push
+    Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+    Everything up-to-date
+    Jonathans-MBP:docs jonathanrose$ git add assignment2 git@github.com:yodeln-yeti/assignment2.git
+    fatal: pathspec 'assignment2' did not match any files
+    Jonathans-MBP:docs jonathanrose$ git add docs git@github.com:yodeln-yeti/assignment2.git
+    fatal: pathspec 'docs' did not match any files
+    Jonathans-MBP:docs jonathanrose$ git add docs/status.txt git@github.com:yodeln-yeti/assignment2.git
+    fatal: pathspec 'docs/status.txt' did not match any files
+    Jonathans-MBP:docs jonathanrose$ clear
+
+    Jonathans-MBP:docs jonathanrose$ cd Desktop
+    -bash: cd: Desktop: No such file or directory
+    Jonathans-MBP:docs jonathanrose$ git add status.txt git@github.com:yodeln-yeti/assignment2.git
+    fatal: pathspec 'git@github.com:yodeln-yeti/assignment2.git' did not match any files
+3.5.2
+    Jonathans-MBP:assignment2 jonathanrose$ git rev-list --all --count
+    9
+3.5.3
+    Jonathans-MBP:assignment2 jonathanrose$ git log -1 --format="%ad" README.md
+    Fri Oct 15 19:24:03 2021 -0400
+3.5.4
+    One reason there are branches in git is to follow a chosen approach. It could be that one approach to
+    complete a task is by recursion yet another team member believes loops are the best. In this case there
+    could be two branches that are made and then they could compare performance and merge the better
+    performing approach. Another reason is that branches allow to show when a given approach is decided to
+    be no longer viable. A branch to a new approach is made and through the history of the project the
+    change can be seen.
+3.5.5
+    Git log only allows a user to see committed changes whereas git status allows the user to see active
+    working changes.
+3.5.6
+    git log --follow Vehicle.h
+3.5.7
+    git log --grep="file"
+3.5.8
+    i.) Inheritance is the idea that types of data can be defined as extensions of other types.
+    ii.) Polymorphism is the idea that a function, object, or variable can be used by or with multiple
+         types of functions, objects, or variables.
+    iii.) Encapsulation is the gathering of data into a single unit.
+3.5.9
+    The main difference between the "Dictator and Lieutenants" workflow and the "Integration Manager"
+    workflow is that there is one less group of actors. The Integration workflow has a single manager that
+    that parses through the code for conflicts. Whereas the Dictator and Lieutenants workflow has two
+    actors that complete a similar task. The Lieutenants merge and perform conflict management on their
+    developers' code and the Dictator merges and performs conflict management on the Lieutenants' code.
+3.5.10
+    A team of 100 would benefit from the "Dictator and Lieutenants" workflow instead of the "Centralized"
+    workflow because of the conflict management. With a Dictator and Lieutenants the developers can focus
+    on engineering and writing the code in a manner that is best for performance and efficiency. Whereas
+    in a team with he "Centralized" workflow they would have to engineer and write code that is efficient
+    but also performs well with the code in the centralized repository.
